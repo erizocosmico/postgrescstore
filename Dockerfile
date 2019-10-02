@@ -33,3 +33,5 @@ RUN apk del --no-cache \
     make \
     gcc \
     sed
+
+CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
